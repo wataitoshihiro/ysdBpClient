@@ -5,7 +5,7 @@ server:
 
 invoice-repo:
 #  url: http://localhost:2222/invoice-repo
-  url: http://ysdbpserver-myproject.192.168.99.106.nip.io/invoice-repo
+  url: http://ysdbpserver-myproject.192.168.99.107.nip.io/invoice-repo
 
 spring:
 #  jpa:
