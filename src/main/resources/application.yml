@@ -11,9 +11,10 @@ spring:
   #  jpa:
   #    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
   datasource:
-    url: jdbc:mysql://${MYSQL_YSD_SERVICE_HOST}:${MYSQL_YSD_SERVICE_PORT}/${DATABASE_NAME}
+#    url: jdbc:mysql://${MYSQL_YSD_SERVICE_HOST}:${MYSQL_YSD_SERVICE_PORT}/${DATABASE_NAME}
 #    username: ${DATABASE_USER}
 #    password: ${DATABASE_PASSWORD}
+    url: jdbc:mysql://${MYSQL_YSD_SERVICE_HOST}:${MYSQL_YSD_SERVICE_PORT}/ysd_db2
     username: userV03
     password: CfvcOmTNhUuhow60
     driverClassName: com.mysql.jdbc.Driver
