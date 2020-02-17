@@ -1,4 +1,6 @@
+# HTTP Server (Tomcat) Port
 server:
+  #  port: 3333
   error:
     whitelabel:
       enabled: true
@@ -6,10 +8,10 @@ server:
 invoice-repo:
 #  url: http://localhost:2222/invoice-repo
   url: http://ysdbpserver-myproject.192.168.99.107.nip.io/invoice-repo
-  
+
 spring:
-#  jpa:
-#    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+  #  jpa:
+  #    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
   datasource:
     url: jdbc:mysql://${MYSQL_YSD_SERVICE_HOST}:${MYSQL_YSD_SERVICE_PORT}/${DATABASE_NAME}
     username: ${DATABASE_USER}
@@ -17,21 +19,21 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
 
     #    url: jdbc:mysql://localhost:3306/ysd_db?user=jim&password=0000&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false
-#---
-#    url: jdbc:mysql://localhost:3306/ysd_db?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false
-#    username: root
-#    password: root
-#---
-#    url: ${vcap.services.cupsdb01.credentials.url}?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false
-#    username: ${vcap.services.cupsdb01.credentials.user}
-#    password: ${vcap.services.cupsdb01.credentials.password}
-#---
-#    url: jdbc:mysql://q-n1s3y1.q-g167.bosh:3306/service_instance_db
-#    username: dad54a75d84a4b4c81fd06c9609d391a
-#    password: t78v6ueio6gr2dc5
-#---
-#    driverClassName: com.mysql.cj.jdbc.Driver
-#    driverClassName: com.mysql.jdbc.Driver
+    #---
+    #    url: jdbc:mysql://localhost:3306/ysd_db?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    #    username: root
+    #    password: root
+    #---
+    #    url: ${vcap.services.cupsdb01.credentials.url}?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    #    username: ${vcap.services.cupsdb01.credentials.user}
+    #    password: ${vcap.services.cupsdb01.credentials.password}
+    #---
+    #    url: jdbc:mysql://q-n1s3y1.q-g167.bosh:3306/service_instance_db
+    #    username: dad54a75d84a4b4c81fd06c9609d391a
+    #    password: t78v6ueio6gr2dc5
+    #---
+    #    driverClassName: com.mysql.cj.jdbc.Driver
+    #    driverClassName: com.mysql.jdbc.Driver
     tomcat:
       max-active: 5
       max-idle: 5
