@@ -1,0 +1,1006 @@
+Retrieving logs for app ysd1 in org cfdev-org / space cfdev-space as admin...
+
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:119)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.InvoiceApplication.main(InvoiceApplication.java:23)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:47)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:86)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	... 56 common frames omitted
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT Caused by: java.net.ConnectException: Connection refused (Connection refused)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.Socket.connect(Unknown Source)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+   2019-07-04T14:17:41.59+0900 [APP/PROC/WEB/0] OUT 	... 59 common frames omitted
+   2019-07-04T14:17:41.60+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:17:41.603 [main] WARN   [SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 08S01
+   2019-07-04T14:17:41.60+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:17:41.604 [main] ERROR  [SqlExceptionHelper.logExceptions] Communications link failure
+   2019-07-04T14:17:41.60+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:17:41.62+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:17:41.618 [main] WARN   [AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [io/pivotal/pal/tracker/JpaConfig.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:17:41.62+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:17:41.627 [main] INFO   [DirectJDKLog.log] Stopping service [Tomcat]
+   2019-07-04T14:17:41.63+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:17:41.635 [main] WARN   [DirectJDKLog.log] The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+   2019-07-04T14:17:41.63+0900 [APP/PROC/WEB/0] OUT  java.base@11.0.3/java.lang.Object.wait(Native Method)
+   2019-07-04T14:17:41.63+0900 [APP/PROC/WEB/0] OUT  java.base@11.0.3/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+   2019-07-04T14:17:41.63+0900 [APP/PROC/WEB/0] OUT  com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:17:41.662 [main] INFO   [ConditionEvaluationReportLoggingListener.logMessage] 
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:17:41.664 [main] ERROR  [SpringApplication.reportFailure] Application run failed
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [io/pivotal/pal/tracker/JpaConfig.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.InvoiceApplication.main(InvoiceApplication.java:23)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:47)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:86)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	... 24 common frames omitted
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:115)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	... 28 common frames omitted
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:119)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	... 43 common frames omitted
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	... 56 common frames omitted
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT Caused by: java.net.ConnectException: Connection refused (Connection refused)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.Socket.connect(Unknown Source)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+   2019-07-04T14:17:41.66+0900 [APP/PROC/WEB/0] OUT 	... 59 common frames omitted
+   2019-07-04T14:17:41.72+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-07-04T14:17:41.77+0900 [CELL/SSHD/0] OUT Exit status 0
+   2019-07-04T14:17:47.32+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 stopping instance 67b4c0ee-188f-4c23-58bf-9f03
+   2019-07-04T14:17:47.32+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 destroying container for instance 67b4c0ee-188f-4c23-58bf-9f03
+   2019-07-04T14:17:47.47+0900 [API/0] OUT Process has crashed with type: "web"
+   2019-07-04T14:17:47.48+0900 [API/0] OUT App instance exited with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d payload: {"instance"=>"67b4c0ee-188f-4c23-58bf-9f03", "index"=>0, "cell_id"=>"49274d66-d91e-4957-8b79-73607368c692", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>6, "crash_timestamp"=>1562217467318119203, "version"=>"e4a43a87-a708-49b7-9722-56384affae27"}
+   2019-07-04T14:17:47.59+0900 [PROXY/0] OUT Exit status 137
+   2019-07-04T14:17:57.41+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 failed to destroy container for instance 67b4c0ee-188f-4c23-58bf-9f03
+   2019-07-04T14:21:59.41+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 creating container for instance 040d1ae3-8491-4025-4be3-ccb7
+   2019-07-04T14:22:00.08+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully created container for instance 040d1ae3-8491-4025-4be3-ccb7
+   2019-07-04T14:22:02.02+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-07-04T14:22:02.29+0900 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx387691K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=148884K
+   2019-07-04T14:22:04.90+0900 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-07-04T14:22:04.90+0900 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-07-04T14:22:04.90+0900 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-07-04T14:22:04.90+0900 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-07-04T14:22:04.91+0900 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-07-04T14:22:04.91+0900 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-07-04T14:22:04.91+0900 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.6.RELEASE)
+   2019-07-04T14:22:05.19+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:05.184 [main] INFO   [CloudPropertySourceApplicationContextInitializer.lambda$initialize$1] 'cloud' property source added
+   2019-07-04T14:22:05.19+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:05.193 [main] INFO   [CloudServiceReconfigurationApplicationContextInitializer.lambda$initialize$1] Reconfiguration enabled
+   2019-07-04T14:22:05.21+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:05.217 [main] INFO   [StartupInfoLogger.logStarting] Starting InvoiceApplication on 040d1ae3-8491-4025-4be3-ccb7 with PID 17 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-07-04T14:22:05.21+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:05.218 [main] INFO   [SpringApplication.logStartupProfileInfo] The following profiles are active: cloud
+   2019-07-04T14:22:06.53+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:06.531 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data repositories in DEFAULT mode.
+   2019-07-04T14:22:06.63+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:06.630 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 84ms. Found 1 repository interfaces.
+   2019-07-04T14:22:07.34+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:07.344 [main] INFO   [PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a51786ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-07-04T14:22:08.05+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:08.051 [main] INFO   [TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+   2019-07-04T14:22:08.08+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:08.088 [main] INFO   [DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+   2019-07-04T14:22:08.10+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:08.107 [main] INFO   [DirectJDKLog.log] Starting service [Tomcat]
+   2019-07-04T14:22:08.10+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:08.108 [main] INFO   [DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.21]
+   2019-07-04T14:22:08.24+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:08.244 [main] INFO   [DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+   2019-07-04T14:22:08.24+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:08.245 [main] INFO   [ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2972 ms
+   2019-07-04T14:22:08.56+0900 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+   2019-07-04T14:22:09.10+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:09.099 [main] INFO   [LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [
+   2019-07-04T14:22:09.10+0900 [APP/PROC/WEB/0] OUT 	name: default
+   2019-07-04T14:22:09.10+0900 [APP/PROC/WEB/0] OUT 	...]
+   2019-07-04T14:22:09.26+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:09.268 [main] INFO   [Version.logVersion] HHH000412: Hibernate Core {5.3.10.Final}
+   2019-07-04T14:22:09.27+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:09.271 [main] INFO   [Environment.<clinit>] HHH000206: hibernate.properties not found
+   2019-07-04T14:22:09.58+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:09.588 [main] INFO   [JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+   2019-07-04T14:22:09.84+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:09.841 [main] INFO   [HikariDataSource.getConnection] HikariPool-1 - Starting...
+   2019-07-04T14:22:09.84+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:09.848 [main] WARN   [DriverDataSource.<init>] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:11.073 [main] ERROR  [HikariPool.throwPoolInitializationException] HikariPool-1 - Exception during pool initialization.
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:119)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.InvoiceApplication.main(InvoiceApplication.java:23)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:47)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:86)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	... 57 common frames omitted
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT Caused by: java.net.ConnectException: Connection refused (Connection refused)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.Socket.connect(Unknown Source)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 	... 60 common frames omitted
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:11.075 [main] WARN   [JdbcEnvironmentInitiator.initiateService] HHH000342: Could not obtain connection to query metadata : Communications link failure
+   2019-07-04T14:22:11.07+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:11.09+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:11.094 [main] INFO   [Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2019-07-04T14:22:11.11+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:11.119 [main] INFO   [LobCreatorBuilderImpl.makeLobCreatorBuilder] HHH000422: Disabling contextual LOB creation as connection was null
+   2019-07-04T14:22:11.96+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:11.967 [main] INFO   [HikariDataSource.getConnection] HikariPool-1 - Starting...
+   2019-07-04T14:22:11.96+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:11.967 [main] WARN   [DriverDataSource.<init>] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:12.970 [main] ERROR  [HikariPool.throwPoolInitializationException] HikariPool-1 - Exception during pool initialization.
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:119)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.InvoiceApplication.main(InvoiceApplication.java:23)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:47)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:86)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	... 56 common frames omitted
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT Caused by: java.net.ConnectException: Connection refused (Connection refused)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.Socket.connect(Unknown Source)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 	... 59 common frames omitted
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:12.974 [main] WARN   [SqlExceptionHelper.logExceptions] SQL Error: 0, SQLState: 08S01
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:12.975 [main] ERROR  [SqlExceptionHelper.logExceptions] Communications link failure
+   2019-07-04T14:22:12.97+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:12.98+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:12.980 [main] WARN   [AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [io/pivotal/pal/tracker/JpaConfig.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:22:12.98+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:12.986 [main] INFO   [DirectJDKLog.log] Stopping service [Tomcat]
+   2019-07-04T14:22:12.99+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:12.991 [main] WARN   [DirectJDKLog.log] The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+   2019-07-04T14:22:12.99+0900 [APP/PROC/WEB/0] OUT  java.base@11.0.3/java.lang.Object.wait(Native Method)
+   2019-07-04T14:22:12.99+0900 [APP/PROC/WEB/0] OUT  java.base@11.0.3/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+   2019-07-04T14:22:12.99+0900 [APP/PROC/WEB/0] OUT  com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+   2019-07-04T14:22:13.00+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:13.008 [main] INFO   [ConditionEvaluationReportLoggingListener.logMessage] 
+   2019-07-04T14:22:13.00+0900 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:22:13.011 [main] ERROR  [SpringApplication.reportFailure] Application run failed
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [io/pivotal/pal/tracker/JpaConfig.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.InvoiceApplication.main(InvoiceApplication.java:23)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:47)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:86)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	... 24 common frames omitted
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:115)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	... 28 common frames omitted
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:119)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	... 43 common frames omitted
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:83)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:122)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	... 56 common frames omitted
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT Caused by: java.net.ConnectException: Connection refused (Connection refused)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at java.base/java.net.Socket.connect(Unknown Source)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.core.io.StandardSocketFactory.connect(StandardSocketFactory.java:202)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	at com.mysql.cj.mysqla.io.MysqlaSocketConnection.connect(MysqlaSocketConnection.java:57)
+   2019-07-04T14:22:13.01+0900 [APP/PROC/WEB/0] OUT 	... 59 common frames omitted
+   2019-07-04T14:22:13.07+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-07-04T14:22:13.09+0900 [CELL/SSHD/0] OUT Exit status 0
+   2019-07-04T14:22:18.72+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 stopping instance 040d1ae3-8491-4025-4be3-ccb7
+   2019-07-04T14:22:18.72+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 destroying container for instance 040d1ae3-8491-4025-4be3-ccb7
+   2019-07-04T14:22:18.80+0900 [API/0] OUT Process has crashed with type: "web"
+   2019-07-04T14:22:18.85+0900 [API/0] OUT App instance exited with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d payload: {"instance"=>"040d1ae3-8491-4025-4be3-ccb7", "index"=>0, "cell_id"=>"49274d66-d91e-4957-8b79-73607368c692", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>7, "crash_timestamp"=>1562217738720233981, "version"=>"e4a43a87-a708-49b7-9722-56384affae27"}
+   2019-07-04T14:22:19.33+0900 [PROXY/0] OUT Exit status 137
+   2019-07-04T14:22:29.11+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully destroyed container for instance 040d1ae3-8491-4025-4be3-ccb7
+   2019-07-04T14:26:01.03+0900 [API/0] OUT Updated app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d ({"buildpack"=>"https://github.com/cloudfoundry/java-buildpack.git#v4.16", "disk_quota"=>1024, "environment_json"=>"[PRIVATE DATA HIDDEN]", "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>1024, "name"=>"ysd1", "space_guid"=>"e100f67a-114d-4655-90c7-94694b9ef5cb"})
+   2019-07-04T14:26:01.63+0900 [API/0] OUT Uploading bits for app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d
+   2019-07-04T14:26:07.31+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 creating container for instance 28d82adb-a337-44c6-554a-1508
+   2019-07-04T14:26:07.95+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully created container for instance 28d82adb-a337-44c6-554a-1508
+   2019-07-04T14:26:14.25+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 stopping instance 28d82adb-a337-44c6-554a-1508
+   2019-07-04T14:26:14.28+0900 [API/0] OUT Updated app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d ({"state"=>"STOPPED"})
+   2019-07-04T14:26:14.69+0900 [API/0] OUT Creating build for app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d
+   2019-07-04T14:26:15.36+0900 [API/0] OUT Updated app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d ({"state"=>"STARTED"})
+   2019-07-04T14:26:15.62+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 creating container for instance 7f44ec11-1b56-4958-a30f-ae07d167fdca
+   2019-07-04T14:26:20.18+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 destroying container for instance 28d82adb-a337-44c6-554a-1508
+   2019-07-04T14:26:23.82+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully created container for instance 7f44ec11-1b56-4958-a30f-ae07d167fdca
+   2019-07-04T14:26:24.31+0900 [STG/0] OUT Downloading app package...
+   2019-07-04T14:26:24.37+0900 [STG/0] OUT Downloading build artifacts cache...
+   2019-07-04T14:26:27.58+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully destroyed container for instance 28d82adb-a337-44c6-554a-1508
+   2019-07-04T14:26:28.84+0900 [STG/0] OUT Downloaded app package (33.8M)
+   2019-07-04T14:26:28.95+0900 [STG/0] OUT Downloaded build artifacts cache (42.5M)
+   2019-07-04T14:26:39.34+0900 [STG/0] OUT [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.16[0m | https://github.com/cloudfoundry/java-buildpack.git#3552cb1
+   2019-07-04T14:26:39.79+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:26:39.99+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m11.0.3_07[0m from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/openjdk-jre-11.0.3_07-bionic.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:26:42.10+0900 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(2.1s)[0m[23m
+   2019-07-04T14:26:42.10+0900 [STG/0] OUT        JVM DNS caching disabled in lieu of BOSH DNS caching
+   2019-07-04T14:26:42.31+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:26:42.94+0900 [STG/0] OUT        Loaded Classes: 23205, Threads: 250
+   2019-07-04T14:26:43.24+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.8.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.8.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:26:43.43+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.16.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:26:43.70+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.5.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.5.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:27:00.10+0900 [STG/0] OUT Exit status 0
+   2019-07-04T14:27:00.10+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-07-04T14:27:00.10+0900 [STG/0] OUT Uploading build artifacts cache...
+   2019-07-04T14:27:00.10+0900 [STG/0] OUT Uploading droplet...
+   2019-07-04T14:27:02.37+0900 [STG/0] OUT Uploaded build artifacts cache (42.5M)
+   2019-07-04T14:27:03.51+0900 [API/0] OUT Creating droplet for app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d
+   2019-07-04T14:27:10.95+0900 [STG/0] OUT Uploaded droplet (77M)
+   2019-07-04T14:27:10.98+0900 [STG/0] OUT Uploading complete
+   2019-07-04T14:27:11.65+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 stopping instance 7f44ec11-1b56-4958-a30f-ae07d167fdca
+   2019-07-04T14:27:11.65+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 destroying container for instance 7f44ec11-1b56-4958-a30f-ae07d167fdca
+   2019-07-04T14:27:12.10+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 creating container for instance 24f674de-484b-4da7-7d60-f2d0
+   2019-07-04T14:27:13.10+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully created container for instance 24f674de-484b-4da7-7d60-f2d0
+   2019-07-04T14:27:15.99+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully destroyed container for instance 7f44ec11-1b56-4958-a30f-ae07d167fdca
+   2019-07-04T14:27:23.11+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-07-04T14:27:23.58+0900 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx386405K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=150170K
+   2019-07-04T14:27:38.47+0900 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-07-04T14:27:38.47+0900 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-07-04T14:27:38.47+0900 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-07-04T14:27:38.47+0900 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-07-04T14:27:38.47+0900 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-07-04T14:27:38.47+0900 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-07-04T14:27:38.49+0900 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.6.RELEASE)
+   2019-07-04T14:27:40.31+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:27:40.267 [main] INFO   [CloudPropertySourceApplicationContextInitializer.lambda$initialize$1] 'cloud' property source added
+   2019-07-04T14:27:40.34+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:27:40.328 [main] INFO   [CloudServiceReconfigurationApplicationContextInitializer.lambda$initialize$1] Reconfiguration enabled
+   2019-07-04T14:27:40.37+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:27:40.351 [main] INFO   [StartupInfoLogger.logStarting] Starting InvoiceApplication on 24f674de-484b-4da7-7d60-f2d0 with PID 22 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-07-04T14:27:40.37+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:27:40.367 [main] INFO   [SpringApplication.logStartupProfileInfo] The following profiles are active: cloud
+   2019-07-04T14:27:53.20+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:27:53.152 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data repositories in DEFAULT mode.
+   2019-07-04T14:27:53.65+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:27:53.649 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 324ms. Found 1 repository interfaces.
+   2019-07-04T14:28:00.55+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:00.552 [main] INFO   [PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3d23f2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-07-04T14:28:02.24+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:02.246 [main] INFO   [TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+   2019-07-04T14:28:02.30+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:02.309 [main] INFO   [DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+   2019-07-04T14:28:02.35+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:02.353 [main] INFO   [DirectJDKLog.log] Starting service [Tomcat]
+   2019-07-04T14:28:02.35+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:02.354 [main] INFO   [DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.21]
+   2019-07-04T14:28:02.66+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:02.663 [main] INFO   [DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+   2019-07-04T14:28:02.66+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:02.666 [main] INFO   [ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 21939 ms
+   2019-07-04T14:28:04.53+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:04.529 [main] INFO   [LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [
+   2019-07-04T14:28:04.53+0900 [APP/PROC/WEB/0] OUT 	name: default
+   2019-07-04T14:28:04.53+0900 [APP/PROC/WEB/0] OUT 	...]
+   2019-07-04T14:28:04.87+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:04.874 [main] INFO   [Version.logVersion] HHH000412: Hibernate Core {5.3.10.Final}
+   2019-07-04T14:28:04.88+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:04.881 [main] INFO   [Environment.<clinit>] HHH000206: hibernate.properties not found
+   2019-07-04T14:28:05.75+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:05.758 [main] INFO   [JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+   2019-07-04T14:28:06.26+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:06.266 [main] INFO   [HikariDataSource.getConnection] HikariPool-1 - Starting...
+   2019-07-04T14:28:07.17+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:07.178 [main] INFO   [HikariDataSource.getConnection] HikariPool-1 - Start completed.
+   2019-07-04T14:28:07.22+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:07.220 [main] INFO   [Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2019-07-04T14:28:08.41+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:08.414 [main] INFO   [AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2019-07-04T14:28:09.72+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:09.721 [main] INFO   [QueryTranslatorFactoryInitiator.initiateService] HHH000397: Using ASTQueryTranslatorFactory
+   2019-07-04T14:28:10.79+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:10.795 [main] INFO   [ExecutorConfigurationSupport.initialize] Initializing ExecutorService 'applicationTaskExecutor'
+   2019-07-04T14:28:10.99+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:10.992 [main] WARN   [JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2019-07-04T14:28:13.37+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:13.371 [main] INFO   [EndpointLinksResolver.<init>] Exposing 2 endpoint(s) beneath base path '/actuator'
+   2019-07-04T14:28:13.74+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:13.731 [main] INFO   [DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+   2019-07-04T14:28:14.31+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:14.301 [main] INFO   [TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+   2019-07-04T14:28:14.34+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:28:14.341 [main] INFO   [StartupInfoLogger.logStarted] Started InvoiceApplication in 45.847 seconds (JVM running for 50.684)
+   2019-07-04T14:28:16.29+0900 [CELL/0] OUT Container became healthy
+   2019-07-04T14:31:56.59+0900 [API/0] OUT Updated app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d ({"buildpack"=>"https://github.com/cloudfoundry/java-buildpack.git#v4.16", "disk_quota"=>1024, "environment_json"=>"[PRIVATE DATA HIDDEN]", "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>1024, "name"=>"ysd1", "space_guid"=>"e100f67a-114d-4655-90c7-94694b9ef5cb"})
+   2019-07-04T14:31:56.95+0900 [API/0] OUT Uploading bits for app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d
+   2019-07-04T14:32:06.20+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 stopping instance 24f674de-484b-4da7-7d60-f2d0
+   2019-07-04T14:32:06.21+0900 [API/0] OUT Updated app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d ({"state"=>"STOPPED"})
+   2019-07-04T14:32:06.39+0900 [API/0] OUT Creating build for app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d
+   2019-07-04T14:32:06.61+0900 [API/0] OUT Updated app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d ({"state"=>"STARTED"})
+   2019-07-04T14:32:06.78+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 creating container for instance 8276d34d-838c-4aa7-a63f-9a6c9512f1b9
+   2019-07-04T14:32:07.67+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully created container for instance 8276d34d-838c-4aa7-a63f-9a6c9512f1b9
+   2019-07-04T14:32:07.75+0900 [STG/0] OUT Downloading app package...
+   2019-07-04T14:32:07.75+0900 [STG/0] OUT Downloading build artifacts cache...
+   2019-07-04T14:32:09.18+0900 [STG/0] OUT Downloaded build artifacts cache (42.5M)
+   2019-07-04T14:32:09.57+0900 [STG/0] OUT Downloaded app package (33.8M)
+   2019-07-04T14:32:11.65+0900 [CELL/SSHD/0] OUT Exit status 0
+   2019-07-04T14:32:11.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:32:11.821 [Thread-2] INFO   [ExecutorConfigurationSupport.shutdown] Shutting down ExecutorService 'applicationTaskExecutor'
+   2019-07-04T14:32:11.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:32:11.825 [Thread-2] INFO   [AbstractEntityManagerFactoryBean.destroy] Closing JPA EntityManagerFactory for persistence unit 'default'
+   2019-07-04T14:32:11.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:32:11.827 [Thread-2] INFO   [HikariDataSource.close] HikariPool-1 - Shutdown initiated...
+   2019-07-04T14:32:11.89+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:32:11.888 [Thread-2] INFO   [HikariDataSource.close] HikariPool-1 - Shutdown completed.
+   2019-07-04T14:32:12.00+0900 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-07-04T14:32:12.04+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 destroying container for instance 24f674de-484b-4da7-7d60-f2d0
+   2019-07-04T14:32:12.37+0900 [PROXY/0] OUT Exit status 137
+   2019-07-04T14:32:17.54+0900 [STG/0] OUT [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.16[0m | https://github.com/cloudfoundry/java-buildpack.git#3552cb1
+   2019-07-04T14:32:18.04+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:32:18.31+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m11.0.3_07[0m from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/openjdk-jre-11.0.3_07-bionic.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:32:20.22+0900 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(1.9s)[0m[23m
+   2019-07-04T14:32:20.22+0900 [STG/0] OUT        JVM DNS caching disabled in lieu of BOSH DNS caching
+   2019-07-04T14:32:20.50+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:32:21.02+0900 [STG/0] OUT        Loaded Classes: 23205, Threads: 250
+   2019-07-04T14:32:21.26+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.8.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.8.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:32:21.46+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.16.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:32:21.66+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.5.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.5.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T14:32:21.78+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully destroyed container for instance 24f674de-484b-4da7-7d60-f2d0
+   2019-07-04T14:32:37.95+0900 [STG/0] OUT Exit status 0
+   2019-07-04T14:32:37.95+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-07-04T14:32:37.96+0900 [STG/0] OUT Uploading droplet...
+   2019-07-04T14:32:37.96+0900 [STG/0] OUT Uploading build artifacts cache...
+   2019-07-04T14:32:39.33+0900 [STG/0] OUT Uploaded build artifacts cache (42.5M)
+   2019-07-04T14:32:39.84+0900 [API/0] OUT Creating droplet for app with guid 4f3c17d8-537d-451e-8c32-5c2f2b2fda9d
+   2019-07-04T14:32:47.34+0900 [STG/0] OUT Uploaded droplet (77M)
+   2019-07-04T14:32:47.36+0900 [STG/0] OUT Uploading complete
+   2019-07-04T14:32:47.85+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 stopping instance 8276d34d-838c-4aa7-a63f-9a6c9512f1b9
+   2019-07-04T14:32:47.85+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 destroying container for instance 8276d34d-838c-4aa7-a63f-9a6c9512f1b9
+   2019-07-04T14:32:48.27+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 creating container for instance 811ac745-ff94-4b81-64a3-626b
+   2019-07-04T14:32:49.53+0900 [CELL/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully created container for instance 811ac745-ff94-4b81-64a3-626b
+   2019-07-04T14:32:52.05+0900 [STG/0] OUT Cell 49274d66-d91e-4957-8b79-73607368c692 successfully destroyed container for instance 8276d34d-838c-4aa7-a63f-9a6c9512f1b9
+   2019-07-04T14:32:57.17+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-07-04T14:32:57.71+0900 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx386405K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=150170K
+   2019-07-04T14:33:03.32+0900 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-07-04T14:33:03.32+0900 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-07-04T14:33:03.32+0900 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-07-04T14:33:03.32+0900 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-07-04T14:33:03.32+0900 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-07-04T14:33:03.32+0900 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-07-04T14:33:03.32+0900 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.6.RELEASE)
+   2019-07-04T14:33:04.05+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:04.048 [main] INFO   [CloudPropertySourceApplicationContextInitializer.lambda$initialize$1] 'cloud' property source added
+   2019-07-04T14:33:04.05+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:04.058 [main] INFO   [CloudServiceReconfigurationApplicationContextInitializer.lambda$initialize$1] Reconfiguration enabled
+   2019-07-04T14:33:04.09+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:04.089 [main] INFO   [StartupInfoLogger.logStarting] Starting InvoiceApplication on 811ac745-ff94-4b81-64a3-626b with PID 15 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-07-04T14:33:04.09+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:04.090 [main] INFO   [SpringApplication.logStartupProfileInfo] The following profiles are active: cloud
+   2019-07-04T14:33:06.91+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:06.911 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data repositories in DEFAULT mode.
+   2019-07-04T14:33:07.13+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:07.136 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 195ms. Found 1 repository interfaces.
+   2019-07-04T14:33:08.21+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:08.218 [main] INFO   [PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef3ba5b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2019-07-04T14:33:09.41+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:09.414 [main] INFO   [TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+   2019-07-04T14:33:09.47+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:09.469 [main] INFO   [DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+   2019-07-04T14:33:09.50+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:09.502 [main] INFO   [DirectJDKLog.log] Starting service [Tomcat]
+   2019-07-04T14:33:09.50+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:09.503 [main] INFO   [DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.21]
+   2019-07-04T14:33:09.73+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:09.728 [main] INFO   [DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+   2019-07-04T14:33:09.73+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:09.730 [main] INFO   [ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 5451 ms
+   2019-07-04T14:33:11.26+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:11.264 [main] INFO   [LogHelper.logPersistenceUnitInformation] HHH000204: Processing PersistenceUnitInfo [
+   2019-07-04T14:33:11.26+0900 [APP/PROC/WEB/0] OUT 	name: default
+   2019-07-04T14:33:11.26+0900 [APP/PROC/WEB/0] OUT 	...]
+   2019-07-04T14:33:11.49+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:11.493 [main] INFO   [Version.logVersion] HHH000412: Hibernate Core {5.3.10.Final}
+   2019-07-04T14:33:11.49+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:11.498 [main] INFO   [Environment.<clinit>] HHH000206: hibernate.properties not found
+   2019-07-04T14:33:12.17+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:12.171 [main] INFO   [JavaReflectionManager.<clinit>] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+   2019-07-04T14:33:12.65+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:12.652 [main] INFO   [HikariDataSource.getConnection] HikariPool-1 - Starting...
+   2019-07-04T14:33:13.41+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:13.414 [main] INFO   [HikariDataSource.getConnection] HikariPool-1 - Start completed.
+   2019-07-04T14:33:13.45+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:13.457 [main] INFO   [Dialect.<init>] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2019-07-04T14:33:15.49+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:15.493 [main] INFO   [AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory] Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2019-07-04T14:33:17.70+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:17.701 [main] INFO   [QueryTranslatorFactoryInitiator.initiateService] HHH000397: Using ASTQueryTranslatorFactory
+   2019-07-04T14:33:18.70+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:18.708 [main] INFO   [ExecutorConfigurationSupport.initialize] Initializing ExecutorService 'applicationTaskExecutor'
+   2019-07-04T14:33:18.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:18.838 [main] WARN   [JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2019-07-04T14:33:19.56+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:19.554 [main] INFO   [EndpointLinksResolver.<init>] Exposing 2 endpoint(s) beneath base path '/actuator'
+   2019-07-04T14:33:19.63+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:19.638 [main] INFO   [DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+   2019-07-04T14:33:19.69+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:19.691 [main] INFO   [TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+   2019-07-04T14:33:19.69+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:33:19.696 [main] INFO   [StartupInfoLogger.logStarted] Started InvoiceApplication in 18.313 seconds (JVM running for 21.958)
+   2019-07-04T14:33:20.03+0900 [CELL/0] OUT Container became healthy
+   2019-07-04T14:34:36.11+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:34:36.104 [http-nio-8080-exec-5] INFO   [DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+   2019-07-04T14:34:36.11+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:34:36.108 [http-nio-8080-exec-5] INFO   [FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+   2019-07-04T14:34:36.14+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:34:36.139 [http-nio-8080-exec-5] INFO   [FrameworkServlet.initServletBean] Completed initialization in 31 ms
+   2019-07-04T14:34:36.36+0900 [RTR/0] OUT ysd1.dev.cfdev.sh - [2019-07-04T05:34:35.917+0000] "GET / HTTP/1.1" 200 0 33 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0" "10.144.0.1:56600" "10.144.0.6:61016" x_forwarded_for:"10.144.0.1" x_forwarded_proto:"http" vcap_request_id:"c9b55b2c-61c9-4fe5-5480-6b9c78e6e139" response_time:0.44828493 app_id:"4f3c17d8-537d-451e-8c32-5c2f2b2fda9d" app_index:"0" x_b3_traceid:"4b503cb301217e73" x_b3_spanid:"4b503cb301217e73" x_b3_parentspanid:"-"
+   2019-07-04T14:34:36.36+0900 [RTR/0] OUT 
+   2019-07-04T14:34:36.50+0900 [RTR/0] OUT ysd1.dev.cfdev.sh - [2019-07-04T05:34:36.426+0000] "GET /favicon.ico HTTP/1.1" 200 0 946 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0" "10.144.0.1:56600" "10.144.0.6:61016" x_forwarded_for:"10.144.0.1" x_forwarded_proto:"http" vcap_request_id:"7969fa27-f112-4032-7960-244498abd8f2" response_time:0.079614688 app_id:"4f3c17d8-537d-451e-8c32-5c2f2b2fda9d" app_index:"0" x_b3_traceid:"c8f27924359addb0" x_b3_spanid:"c8f27924359addb0" x_b3_parentspanid:"-"
+   2019-07-04T14:34:36.50+0900 [RTR/0] OUT 
+   2019-07-04T14:34:55.88+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:34:55.887 [http-nio-8080-exec-8] INFO   [WelcomeController.invoice] ■■■■■■ s t a r t ■■■■■■
+   2019-07-04T14:34:55.88+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:34:55.888 [http-nio-8080-exec-8] INFO   [WelcomeController.invoice] <<<invoice record by jdbc direct read >>> number[5]
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT Hibernate: 
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT     select
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber as invoiceN1_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.GolfOrSkiOrAirport as GolfOrSk2_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.address as address3_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.caryOnOrCargoBooking as caryOnOr4_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.charge as charge5_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.client as client6_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.clubNumber as clubNumb7_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.customerCode as customer8_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.dealer as dealer9_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.deliveryDate as deliver10_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.destination as destina11_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.flightCode as flightC12_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.fullName as fullNam13_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.goods as goods14_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsCode as goodsCo15_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsName as goodsNa16_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceType as invoice17_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.personInCharge as personI18_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.pickup as pickup19_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.position as positio20_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.postalCode as postalC21_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptDate as receipt22_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptVoucher as receipt23_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.requestDate as request24_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.service as service25_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.settlement as settlem26_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.size as size27_0_,
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.telephoneNumber as telepho28_0_ 
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT     from
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice invoice0_ 
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT     where
+   2019-07-04T14:34:55.94+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber=?
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT Hibernate: 
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT     select
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber as invoiceN1_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.GolfOrSkiOrAirport as GolfOrSk2_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.address as address3_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.caryOnOrCargoBooking as caryOnOr4_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.charge as charge5_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.client as client6_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.clubNumber as clubNumb7_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.customerCode as customer8_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.dealer as dealer9_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.deliveryDate as deliver10_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.destination as destina11_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.flightCode as flightC12_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.fullName as fullNam13_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.goods as goods14_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsCode as goodsCo15_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsName as goodsNa16_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceType as invoice17_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.personInCharge as personI18_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.pickup as pickup19_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.position as positio20_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.postalCode as postalC21_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptDate as receipt22_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptVoucher as receipt23_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.requestDate as request24_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.service as service25_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.settlement as settlem26_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.size as size27_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.telephoneNumber as telepho28_0_ 
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT     from
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice invoice0_ 
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT     where
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber=?
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT Hibernate: 
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT     select
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber as invoiceN1_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.GolfOrSkiOrAirport as GolfOrSk2_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.address as address3_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.caryOnOrCargoBooking as caryOnOr4_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.charge as charge5_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.client as client6_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.clubNumber as clubNumb7_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.customerCode as customer8_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.dealer as dealer9_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.deliveryDate as deliver10_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.destination as destina11_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.flightCode as flightC12_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.fullName as fullNam13_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.goods as goods14_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsCode as goodsCo15_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsName as goodsNa16_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceType as invoice17_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.personInCharge as personI18_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.pickup as pickup19_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.position as positio20_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.postalCode as postalC21_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptDate as receipt22_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptVoucher as receipt23_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.requestDate as request24_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.service as service25_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.settlement as settlem26_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.size as size27_0_,
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.telephoneNumber as telepho28_0_ 
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT     from
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice invoice0_ 
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT     where
+   2019-07-04T14:34:56.07+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber=?
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT Hibernate: 
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT     select
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber as invoiceN1_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.GolfOrSkiOrAirport as GolfOrSk2_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.address as address3_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.caryOnOrCargoBooking as caryOnOr4_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.charge as charge5_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.client as client6_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.clubNumber as clubNumb7_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.customerCode as customer8_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.dealer as dealer9_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.deliveryDate as deliver10_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.destination as destina11_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.flightCode as flightC12_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.fullName as fullNam13_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.goods as goods14_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsCode as goodsCo15_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsName as goodsNa16_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceType as invoice17_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.personInCharge as personI18_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.pickup as pickup19_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.position as positio20_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.postalCode as postalC21_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptDate as receipt22_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptVoucher as receipt23_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.requestDate as request24_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.service as service25_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.settlement as settlem26_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.size as size27_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.telephoneNumber as telepho28_0_ 
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT     from
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice invoice0_ 
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT     where
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber=?
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT Hibernate: 
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT     select
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber as invoiceN1_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.GolfOrSkiOrAirport as GolfOrSk2_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.address as address3_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.caryOnOrCargoBooking as caryOnOr4_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.charge as charge5_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.client as client6_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.clubNumber as clubNumb7_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.customerCode as customer8_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.dealer as dealer9_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.deliveryDate as deliver10_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.destination as destina11_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.flightCode as flightC12_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.fullName as fullNam13_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.goods as goods14_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsCode as goodsCo15_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsName as goodsNa16_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceType as invoice17_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.personInCharge as personI18_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.pickup as pickup19_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.position as positio20_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.postalCode as postalC21_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptDate as receipt22_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptVoucher as receipt23_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.requestDate as request24_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.service as service25_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.settlement as settlem26_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.size as size27_0_,
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.telephoneNumber as telepho28_0_ 
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT     from
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice invoice0_ 
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT     where
+   2019-07-04T14:34:56.08+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber=?
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:34:56.121 [http-nio-8080-exec-8] INFO   [StopWatch.report2] <<<invoice record by jdbc direct read >>>[198ミリ秒] (14:34:55.891 - 14:34:56.089)
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT Hibernate: 
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT     select
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber as invoiceN1_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.GolfOrSkiOrAirport as GolfOrSk2_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.address as address3_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.caryOnOrCargoBooking as caryOnOr4_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.charge as charge5_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.client as client6_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.clubNumber as clubNumb7_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.customerCode as customer8_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.dealer as dealer9_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.deliveryDate as deliver10_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.destination as destina11_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.flightCode as flightC12_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.fullName as fullNam13_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.goods as goods14_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsCode as goodsCo15_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.goodsName as goodsNa16_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceType as invoice17_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.personInCharge as personI18_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.pickup as pickup19_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.position as positio20_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.postalCode as postalC21_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptDate as receipt22_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.receiptVoucher as receipt23_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.requestDate as request24_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.service as service25_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.settlement as settlem26_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.size as size27_0_,
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.telephoneNumber as telepho28_0_ 
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT     from
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice invoice0_ 
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT     where
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT         invoice0_.invoiceNumber=?
+   2019-07-04T14:34:56.12+0900 [APP/PROC/WEB/0] OUT 2019/07/04 14:34:56.125 [http-nio-8080-exec-8] INFO   [WelcomeController.invoice] ■■■■■■ e   n   d ■■■■■■
+   2019-07-04T14:34:56.23+0900 [RTR/0] OUT ysd1.dev.cfdev.sh - [2019-07-04T05:34:55.852+0000] "GET /invoice?number=5 HTTP/1.1" 200 0 676 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0" "10.144.0.1:56600" "10.144.0.6:61016" x_forwarded_for:"10.144.0.1" x_forwarded_proto:"http" vcap_request_id:"ee9bd2a0-9e40-4f11-4104-2fe24f29d4a5" response_time:0.385222415 app_id:"4f3c17d8-537d-451e-8c32-5c2f2b2fda9d" app_index:"0" x_b3_traceid:"064f541df5683136" x_b3_spanid:"064f541df5683136" x_b3_parentspanid:"-"
+   2019-07-04T14:34:56.23+0900 [RTR/0] OUT 
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://http/ysd2.dev.cfdev.sh/invoice-repo/1": http; nested exception is java.net.UnknownHostException: http
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:744)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:670)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:338)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at io.pivotal.pal.tracker.InvoiceClient.find(InvoiceClient.java:19)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at io.pivotal.pal.tracker.WelcomeController.invoiceMsa(WelcomeController.java:81)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:114)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:104)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.cloudfoundry.router.ClientCertificateMapper.doFilter(ClientCertificateMapper.java:77)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/java.lang.Thread.run(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR Caused by: java.net.UnknownHostException: http
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/java.net.Socket.connect(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/java.net.Socket.connect(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.NetworkClient.doConnect(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.http.HttpClient.openServer(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.http.HttpClient.<init>(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.http.HttpClient.New(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.http.HttpClient.New(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735)
+   2019-07-04T14:36:01.46+0900 [APP/PROC/WEB/0] ERR 	... 71 more
+   2019-07-04T14:36:01.50+0900 [RTR/0] OUT ysd1.dev.cfdev.sh - [2019-07-04T05:36:01.064+0000] "GET /invoice-msa?number=5&multiple=2 HTTP/1.1" 417 0 125 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0" "10.144.0.1:56600" "10.144.0.6:61016" x_forwarded_for:"10.144.0.1" x_forwarded_proto:"http" vcap_request_id:"7f59c914-5a55-42e8-6822-e9f1e8f07fe8" response_time:0.437936759 app_id:"4f3c17d8-537d-451e-8c32-5c2f2b2fda9d" app_index:"0" x_b3_traceid:"5c74ca510aba6f6e" x_b3_spanid:"5c74ca510aba6f6e" x_b3_parentspanid:"-"
+   2019-07-04T14:36:01.50+0900 [RTR/0] OUT 

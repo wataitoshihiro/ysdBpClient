@@ -1,0 +1,4 @@
+curl -D - http://localhost:8080/streaming?eventNumber=2\&intervalSec=1
+
+https://qiita.com/kazuki43zoo/items/53b79fe91c41cc5c2e59
+

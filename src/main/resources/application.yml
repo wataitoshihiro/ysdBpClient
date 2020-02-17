@@ -1,0 +1,52 @@
+server:
+  error:
+    whitelabel:
+      enabled: true
+
+invoice-repo:
+#  url: http://localhost:2222/invoice-repo
+  url: http://ysdbpserver-myproject.192.168.99.106.nip.io/invoice-repo
+
+spring:
+#  jpa:
+#    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    url: jdbc:mysql://${MYSQL_YSD_SERVICE_HOST}:${MYSQL_YSD_SERVICE_PORT}/${DATABASE_NAME}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://mysql-ysd.myproject01.svc:3306/${DATABASE_NAME}
+#    username: userBF7
+#    password: Iida3bViANu50OII
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/ysd_db?user=root&password=root&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+#    url: jdbc:mysql://localhost:3306/tracker_dev?serverTimezone=JST&useSSL=false
+#    url: jdbc:mysql://localhost:3306/tracker_dev?useSSL=false
+#    url: jdbc:mysql://localhost:3306/tracker_test?useSSL=false
+#    username: root
+#    password: root
+    tomcat:
+      max-active: 4
+      max-idle: 4
+      min-idle: 4
+      initial-size: 4
+    hikari:
+      connection-timeout: 3000
+      connection-test-query: SELECT 1
+      maximum-pool-size: 50
+      minimum-idle: 5
+      validation-timeout: 1000
+
+#MANAGEMENT_SECURITY_ENABLED: false
+#WELCOME_MESSAGE: Hello from the review environment
+
+#logging.level:
+#  root: WARN
+#  org.superbiz.moviefun: DEBUG
+#
+#s3:
+#  accessKey: <access key id>
+#  secretKey: <secret access key>
+#  bucketName: <name of the bucket>
+#WELCOME_MESSAGE: Hello from the review environment
+#MANAGEMENT_SECURITY_ENABLED: false

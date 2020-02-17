@@ -1,0 +1,47 @@
+<configuration>
+
+  <property name="logDir" value="./logs/" />
+  <property name="fileName" value="ysd-test" />
+  <property name="format1" value="%d{yyyy/MM/dd HH:mm:ss.SSS} [%t] %-6p [%C{0}.%M] %m%n" />
+  <timestamp key="bySecond" datePattern="yyyyMMdd'-'HHmmss"/>
+  <timestamp key="byDate" datePattern="yyyyMMdd"/>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${logDir}${fileName}-${byDate}.log</file>
+	<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <fileNamePattern>${logDir}${fileName}-${byDate}-%i.log</fileNamePattern>
+      <minIndex>1</minIndex>
+      <maxIndex>2</maxIndex>
+    </rollingPolicy>
+
+	<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <maxFileSize>1024MB</maxFileSize>
+    </triggeringPolicy>
+
+    <encoder>
+      <pattern>${format1}</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${format1}</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="org" level="info" />
+  <logger name="org.hibernate" level="info" />
+  <logger name="org.aopalliance" level="info" />
+  <logger name="org.springframework" level="info" />
+  <logger name="sample" level="info" />
+  <logger name="util" level="info" />
+  <logger name="util.RuleLogger" level="info" />
+  <logger name="common.util" level="info" />
+  <!--<logger name="io.pivotal.pal.tracker" level="debug" />-->
+
+<!-- trace, debug, info, warn, error -->
+  <root level="info">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

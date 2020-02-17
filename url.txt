@@ -1,0 +1,9 @@
+PC
+http://localhost:8080/
+http://localhost:8080/invoice?number=5
+http://localhost:8080/invoice-msa?number=5&multiple=2
+http://localhost:8080/cars/1-2aa
+
+PCF
+http://ysd1.dev.cfdev.sh/invoice?number=5
+http://ysd1.dev.cfdev.sh/invoice-msa?number=5&multiple=2
