@@ -15,7 +15,8 @@ spring:
 #    username: ${DATABASE_USER}
 #    password: ${DATABASE_PASSWORD}
     url: jdbc:mysql://${MYSQL_YSD_SERVICE_HOST}:${MYSQL_YSD_SERVICE_PORT}/ysd_db2
-    username: userV03
+#    username: userV03
+    username: ${.data['database-user']}
     password: CfvcOmTNhUuhow60
     driverClassName: com.mysql.jdbc.Driver
     #    url: jdbc:mysql://mysql-ysd.myproject01.svc:3306/${DATABASE_NAME}
